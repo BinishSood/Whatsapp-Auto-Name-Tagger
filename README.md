@@ -48,7 +48,6 @@ Instead of manually typing `@Name` repeatedly for a group of friends or family, 
 * **React Engine Bypass:** Circumvents WhatsApp's Virtual DOM protections using `document.execCommand` injections to emulate physical keyboard buffer inputs.
 * **Prefix Collision Safety:** Implements "Space-Commit" debouncing logic. Typing `@test` will not prematurely trigger if attempting to type `@test1`. 
 * **Synthetic Event Emulation:** Generates and dispatches full-cycle hardware mouse events (`mousedown`, `mouseup`, `click`) directly to rendered UI components.
-* **Bottom-Up DOM Traversal:** Uses `.reverse()` array traversal to accurately target transient React portal menus at the bottom of the DOM, preventing misclicks on chat history.
 
 ## 👨‍💻 Author
 
