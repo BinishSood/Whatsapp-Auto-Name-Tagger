@@ -12,7 +12,7 @@ Instead of manually typing `@Name` repeatedly for a group of friends or family, 
 
 ### For Google Chrome, Edge, and Brave (Unpacked Zip)
 
-1. Go to the **Releases** page and download the `WA-Batch-Tagger.zip` file.
+1. Go to the [Releases](https://github.com/BinishSood/Whatsapp-Auto-Name-Tagger/releases) page and download the `WA-Batch-Tagger.zip` file.
 2. Unzip the folder to a permanent location on your computer.
 3. Open your browser and navigate to `chrome://extensions/`.
 4. Turn on **Developer mode** (usually a toggle in the top right corner).
@@ -21,7 +21,7 @@ Instead of manually typing `@Name` repeatedly for a group of friends or family, 
 
 ### For Firefox Desktop (.xpi File) [easy]
 
-1. Go to the **Releases** page and download the `WA-Batch-Tagger.xpi` file.
+1. Go to the [Releases](https://github.com/BinishSood/Whatsapp-Auto-Name-Tagger/releases) page and download the `WA-Batch-Tagger.xpi` file.
 2. Open Firefox and navigate to `about:addons`.
 3. Click the gear icon ⚙️ in the top right corner and select **Install Add-on From File...**
 4. Select the downloaded `.xpi` file and click **Add** when prompted.
@@ -36,7 +36,7 @@ Instead of manually typing `@Name` repeatedly for a group of friends or family, 
 
 1. Click the extension icon in your browser toolbar to open the configuration popup.
 2. Enter a **Trigger Alias** (e.g., `@family`).
-3. Enter the **Names** exactly as they appear in your WhatsApp group, separated by commas (e.g., `Papa, Mumma, Sister`).
+3. Enter the **Names** exactly as they appear in your WhatsApp group, separated by commas (e.g., `Dad, Mom, Bob`).
 4. Click **Save Alias**.
 5. Open a WhatsApp Web group chat.
 6. Type your alias followed by a space (e.g., `@family `). 
