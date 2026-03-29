@@ -1,0 +1,13 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Packaged extension builds
+*.zip
+*.xpi
+*.crx
+
+# Editor directories and files
+.vscode/
+.idea/
