@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- this is css, style, not important  -->
+    <style>
+        body { width: 320px; padding: 15px; font-family: 'Segoe UI', Tahoma, sans-serif; }
+        h3 { margin-top: 0; color: #075E54; border-bottom: 2px solid #25D366; padding-bottom: 8px; }
+        label { font-size: 12px; font-weight: bold; color: #555; display: block; margin-top: 10px; }
+        input, textarea { width: 100%; margin-top: 5px; margin-bottom: 8px; padding: 8px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+        textarea { height: 60px; resize: none; }
+        button { width: 100%; padding: 8px; background: #25D366; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; margin-top: 5px; }
+        button:hover { background: #128C7E; }
+        #status { color: #25D366; margin-top: 5px; font-size: 12px; text-align: center; display: none; font-weight: bold;}
+        
+        h4 { margin: 15px 0 5px 0; color: #333; font-size: 14px; }
+        #aliasList { max-height: 180px; overflow-y: auto; border: 1px solid #eee; border-radius: 4px; padding: 5px; background: #fafafa; }
+        .alias-item { padding: 8px; border-bottom: 1px solid #ddd; }
+        .alias-item:last-child { border-bottom: none; }
+        .alias-name { font-weight: bold; color: #075E54; font-size: 14px; display: block; margin-bottom: 4px; }
+        .alias-names { font-size: 11px; color: #444; margin-bottom: 8px; line-height: 1.3; }
+        .action-btns { display: flex; gap: 5px; }
+        .edit-btn, .del-btn { flex: 1; padding: 5px; font-size: 11px; border: none; border-radius: 3px; cursor: pointer; color: white; }
+        .edit-btn { background: #34B7F1; }
+        .edit-btn:hover { background: #0c8ec4; }
+        .del-btn { background: #ff4c4c; }
+        .del-btn:hover { background: #cc0000; }
+        .empty-msg { text-align: center; color: #999; font-style: italic; padding: 10px; font-size: 12px;}
+    </style>
+</head>
+<body>
+    <h3>WA Context Tagger</h3>
+    
+    <label>Trigger Alias:</label>
+    <input type="text" id="aliasInput" placeholder="e.g., @crs">
+
+    <label>Names (comma separated):</label>
+    <textarea id="namesInput" placeholder="Dad, Mom"></textarea>
+    <!-- textarea is for multiple lines of text -->
+
+    <button id="saveBtn">Save Alias</button>
+    <div id="status">Alias Saved!</div>
+    <!-- div means a division, its just a container for other elements. id means we can access it in js, and class means we can style it in css. -->
+
+    <h4>Saved Aliases</h4>
+    <div id="aliasList">
+        <div class="empty-msg">Loading...</div>
+    </div>
+
+    <script src="popup.js"></script>
+    <!-- script is injecting the js file into this html -->
+</body>
+</html>
