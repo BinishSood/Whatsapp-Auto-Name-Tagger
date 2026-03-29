@@ -19,14 +19,15 @@ Instead of manually typing `@Name` repeatedly for a group of friends or family, 
 5. Click the **Load unpacked** button in the top left.
 6. Select the unzipped folder. The extension is now installed!
 
-### For Firefox Desktop (.xpi File) [easy]
+### For Firefox Desktop
 
-1. Go to the [Releases](https://github.com/BinishSood/Whatsapp-Auto-Name-Tagger/releases) page and download the `WA-Batch-Tagger.xpi` file.
-2. Open Firefox and navigate to `about:addons`.
-3. Click the gear icon ⚙️ in the top right corner and select **Install Add-on From File...**
-4. Select the downloaded `.xpi` file and click **Add** when prompted.
-
-*(Note for Developers: To run locally, rename `manifest-firefox.json` to `manifest.json` before loading into `about:debugging`)*
+To install and run the extension in Firefox (Temporary/Unsigned):
+1. Go to the [Releases](https://github.com/BinishSood/Whatsapp-Auto-Name-Tagger/releases) page and download the source code or `WA-Batch-Tagger.xpi`.
+2. Open Firefox and navigate to `about:debugging`.
+3. Click **This Firefox** on the left-hand sidebar.
+4. Click **Load Temporary Add-on...**
+5. Select the `manifest-firefox.json` file from your project folder (or the `.xpi` file). 
+6. The extension is now active! *(Note: Temporary add-ons are removed when Firefox restarts).*
 
 ### For Safari users
 
@@ -39,7 +40,7 @@ Instead of manually typing `@Name` repeatedly for a group of friends or family, 
 3. Enter the **Names** exactly as they appear in your WhatsApp group, separated by commas (e.g., `Dad, Mom, Bob`).
 4. Click **Save Alias**.
 5. Open a WhatsApp Web group chat.
-6. Type your alias followed by a space (e.g., `@family `). 
+6. **Triggering the Macro:** Type your alias followed by a **space** (e.g., `@family `). The space character is required to "commit" the alias and trigger the automatic tagging.
 7. The macro will take over and batch-tag the contacts!
 
 ## ⚙️ Technical Architecture
